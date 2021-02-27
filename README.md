@@ -3,7 +3,9 @@
 ## Notes pour la DTY
 
 Le module librosa utilisé pour modifier les fichiers audio n'est pas stable et renvoie une erreur à l'importation.
+
 Ainsi, s'il est possible de se balader sur le site, d'upload des musiques ainsi que des samples, la musique ne sera pas modifiée.
+
 S'il s'avère que le module librosa fonctionne, essayez de lancer 'app_avec_musique.py' et non 'app.py'.
 
 Lorsque que l'on arrive sur le site, un identifiant ainsi qu'un mot de passe sont demandés. Cependant, le système d'authentification n'est pas opérationnel (il n'y a pas de système d'enregistrement). Il en va de même pour l'onglet connexion.
