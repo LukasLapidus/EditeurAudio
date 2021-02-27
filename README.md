@@ -2,15 +2,13 @@
 
 ## Notes pour la DTY
 
-Le module librosa utilisé pour modifier les fichiers audio n'est pas stable et renvoie une erreur à l'importation.
+Pour que le site soit opérationnel il sera nécessaire d'avoir intallé MySQL Community Server et de créer une base de données spécifique sur son propre environnement comme indiqué dans la fin du README.
 
-Ainsi, s'il est possible de se balader sur le site, d'upload des musiques ainsi que des samples, la musique ne sera pas modifiée.
+Le module librosa utilisé pour modifier les fichiers audio n'est pas stable et renvoie une erreur à l'importation. Ainsi, s'il est possible de se balader sur le site, d'upload des musiques ainsi que des samples, la musique ne sera pas modifiée et aucun fichier ne pourra être lu/exporté dans le dossier downloads.
 
 S'il s'avère que le module librosa fonctionne, essayez de lancer 'app_avec_musique.py' et non 'app.py'.
 
-Lorsque que l'on arrive sur le site, un identifiant ainsi qu'un mot de passe sont demandés. Cependant, le système d'authentification n'est pas opérationnel (il n'y a pas de système d'enregistrement). Il en va de même pour l'onglet connexion.
-
-Pour que le site soit opérationnel il sera nécessaire d'avoir mysql server et de créer la base de données sur son propre environnement comme indiqué dans la suite.
+Lorsque que l'on arrive sur le site, un identifiant et un mot de passe sont demandés. Cependant, le système d'authentification n'est pas opérationnel, il est donc inutile d'essayer de se connecter (il n'y a pas de système d'enregistrement). Il en va de même pour l'onglet connexion.
 
 ## Membres du groupe
 * Alexandre Belot
