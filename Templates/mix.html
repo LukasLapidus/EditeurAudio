@@ -1,0 +1,133 @@
+
+
+{% extends 'layoutx.html' %}
+
+{% block body %}
+<section id="iq-home" class="bannerq-bg iq-bg-fixed iq-box-shadow iq-over-black-90" style=" background: url(images/banner/bg.jpg);">
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="row banner-text">
+           
+            <div class="col-md-12">
+                <div class="row banner-text">
+                    <form method="POST" action="" name="mix_buttons">
+                        <legend>Caractéristiques de la piste</legend>
+                      <div id="container_carac">
+                            
+                            <p>
+                              <div class="element_carac">
+                                <label><h5>Original :</h5></label><input type="text" name ='original_filename' class="form-control" value={{doc}}>
+                              </div>
+                              <div class="element_carac">
+                                <label><h5>Titre :</h5></label><input type="text" name ='titre' class="form-control" value={{titre}}>
+                              </div>
+                              <div class="element_carac">
+                                <label><h5>Taux d'échantillonnage (Hz):</h5></label><input type="number" name ='sampling_rate' class="form-control" value="22050">
+                              </div>
+                              <div class="element_carac">
+                                <label><h5>Tempo : {{"{} bpm ".format(tempo)}}</h5></label>
+                              </div>
+                              <br> 
+                              <div class="element_carac">
+                                <label for='Nom'><h5>Nom du fichier:</h5></label><input type="text" name ='filename' class="form-control" placeholder="current.wav">
+                              </div>
+                              <div class="element_carac">
+                                <label for='inconnu'><h5>Genre musical: </h5></label><input type="text" name = 'genre' class="form-control" placeholder="inconnu">
+                              </div>
+                            </p>
+                            <p><input class="btn btn-primary" type="Submit" value="Appliquer"></p>
+                      </div>
+                      <div id="container_mix">
+                
+                        <div class="element_mix"> 
+                          <legend>Mix de la piste</legend>
+                          <p>
+                            <label><h5>Vitesse:</h5></label><input type="number" name ='speed' class="form-control" value="1">
+                            <label><h5>Bass: </h5></label><input type="number" name = 'bass' class="form-control" value="1">
+                            <label><h5>Tonalité: </h5></label><input type="number" name = 'tone' class="form-control" value="0">
+                          </p>
+                        <p><input class="btn btn-primary" type="Submit" value="Appliquer les changements"></p>
+                      </div>
+                      <div class="element_mix">
+                          <legend>Découpage de la piste audio</legend>
+                        <p>
+                          <label for='inst_debut'><h5>Instant du début:</h5></label><input type="text" name ='inst_debut' class="form-control" placeholder="Pour ne rien changer,ne rien entrer">
+                          <label for='inst_fin'><h5>Instant de fin: </h5></label><input type="text" name = 'inst_fin' class="form-control" placeholder="Pour ne rien changer,ne rien entrer">
+                        </p>
+                      </div>
+                      <div class="element_mix">
+                        <legend>Rajout de batterie</legend>
+                        
+                          <p>
+                            <label><h5>Funk:</h5></label>
+                            
+                            <input type="checkbox" name ='drum_funk' class="form-control" placeholder="0", value="activate">
+                            
+                          </p>
+                          <p>
+                            <label><h5>Blue: </h5></label>
+                            <input type="checkbox" name ='drum_blues' class="form-control" placeholder="0", value="activate">
+                            
+                          </p>
+                      
+                      <p><input class="btn btn-primary" type="Submit" value="Appliquer les changements"></p>
+                    </div>
+                
+                      <div class="element_mix">
+                          <legend>Ajout de sample à la musique</legend>
+                          <p>
+                            <h5>Id du sample</h5>
+                            <select name="sample_id">
+                                        <option></option>
+                                    {% for item in items %}
+                                        <option>{{item.id}}</option>
+                                    {% endfor %} 
+                            </select>
+                          </p>
+                          <p>
+                            <label for='Instant'><h5>Instant de l'insertion (en secondes)</h5></label><input type="text" name = 'insert_time' >
+                          </p>
+                    
+                        <p><input class="btn btn-primary" type="Submit" value="Appliquer"></p>
+                      </div>
+                    </div>
+                    </form>
+                
+                
+                
+                <div id="container_sample">
+                    <legend>Liste de sample</legend>
+                
+                    <form method="GET" action="/sample">
+                  <p><input class="btn btn-primary" type="Submit" value="S'occuper de la base de donnée"></p>
+                </form>
+                  <table class="table table-striped">
+                    <tr>
+                      <th>Id</th>
+                      <th>Nom</th>
+                    </tr>
+                    {% for item in items %}
+                      <tr>
+                        <td>{{item.id}}</td>
+                        <td>{{item.nom}}</td>        
+                      </tr>
+                    {% endfor %}
+                  </table>
+                </div>
+                
+                
+                <audio controls="controls">
+                  <source src="../uploads/current.wav" type="audio/wav"/>
+                </audio>
+            </div>
+        </div>
+    </div>
+    </form>
+
+
+
+
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'layoutx.html' %}
+
+{% block body %}
+
+<section id="iq-home" class="bannerq-bg iq-bg-fixed iq-box-shadow iq-over-black-90" style=" background: url(images/banner/bg.jpg);">
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="row banner-text"></div>
+            <div class="col-md-4 col-lg-4">
+            {% block page_content %}{% endblock %}    
+        </div></div>
+    </div>
+</section>
+{% endblock %}

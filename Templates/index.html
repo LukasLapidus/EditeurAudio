@@ -1,0 +1,81 @@
+{% extends 'layoutx.html' %}
+
+{% block body %}
+<section id="iq-home" class="bannerq-bg iq-bg-fixed iq-box-shadow iq-over-black-90" style=" background: url(images/banner/bg.jpg);">
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="row banner-text">
+            <div class="col-md-8 col-lg-8 hidden-xs hidden-sm">
+                <h1 class="iq-font-white iq-tw-8" data-animation="animated fadeInLeft"><small class="iq-font-white iq-tw-6"><b class="iq-font-white">&#9679;</b> Un projet Coding Week</small>MP3 EDITEUR & PLAYER</h1>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                {% from "includes/_formhelpers.html" import render_field %}
+                    
+                <form class="banner-form", method="post">
+                    <div class="form-icon">
+                        <img class="img-responsive center-block" src="{{ url_for('static', filename='images/logo-white.png') }}" alt="#">
+                    </div>
+                    <h3 class="iq-tw-7"><small>DJ en herbe, bienvenue</small>
+                    Identifiez-vous</h3>
+                    <div class="form-group">
+                        {{ render_field(form.utilisateur, class_="form-control", placeholder="Utilisateur") }}
+                    </div>
+                    <div class="form-group">
+                        {{ render_field(form.mdp, class_="form-control", placeholder="Mot de passe") }}
+                    </div>
+                    
+                            <input type="submit" name="upvote" value="Connexion" class="button btn-block text-center iq-mt-30"/>
+                    </form>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="main-content"> 
+        <!-- How it Works -->
+        
+        <section class="overview-block-ptb iq-how-it-work">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="heading-title">
+                            <h2 class="title iq-tw-6">Que faire sur ce site ?</h2>
+                            <div class="divider"></div>
+                            <h3 class="iq-tw-3 iq-font-light-blue iq-mt-40 iq-plr-90">Profitez de nombreuses fonctionnalités audio et éditez vos propres pistes à partir de vos sons préférés !</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="iq-Work-box text-center">
+                            <div class="Work-icon">
+                                <i aria-hidden="true" class="ion-ios-pie-outline"></i>
+                                <div class="line"></div>
+                            </div>
+                            <h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Choisissez ce que vous écoutez</h4>
+                            <p>Chargez vos pistes audio sur la base de données du site</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 re-mt-30">
+                        <div class="iq-Work-box text-center">
+                            <div class="Work-icon">
+                                <i aria-hidden="true" class="ion-ios-photos-outline"></i>
+                                <div class="line"></div>
+                            </div>
+                            <h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Editez vos propres sons</h4>
+                            <p>Bénéficiez des fonctionnalités de notre table de mixage</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 re-mt-30">
+                        <div class="iq-Work-box text-center">
+                            <div class="Work-icon">
+                                <i aria-hidden="true" class="ion-ios-heart-outline"></i>
+                            </div>
+                            <h4 class="iq-tw-6 iq-mt-20 iq-mb-15">Ecoutez</h4>
+                            <p>Profitez de vos créations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+{% endblock %}

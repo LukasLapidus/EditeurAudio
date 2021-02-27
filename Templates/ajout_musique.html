@@ -1,0 +1,32 @@
+
+{% extends 'layoutx.html' %}
+
+{% block body %}
+<section id="iq-home" class="bannerq-bg iq-bg-fixed iq-box-shadow iq-over-black-90" style=" background: url(images/banner/bg.jpg);">
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="row banner-text">
+           
+            <div class="col-md-12">
+                <h5>Ajout de la musique à la base de donnée</h1>
+    
+                <form method="POST" action=""  > 
+                
+                  <p>
+                    <label for='Titre'><h3>Le titre:</h3></label><input type="text" name ='titre' class="form-control">
+                  </p>
+                
+                  <p>
+                    <label for='artiste'><h3>L'artiste:</h3></label><input type="text" name = 'artiste' class="form-control">
+                  </p>
+            
+                <p><input class="btn btn-primary" type="Submit" value="Envoyer"></p>
+              </form>
+            
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

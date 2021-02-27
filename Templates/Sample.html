@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <h1>Ajout de sample à la musique</h1>
+
+    
+      <p>
+        <h3>Id du sample</h3>
+        <select name="sample">
+                {% for item in items %}
+                    <option>{{item.id}}</option>
+                {% endfor %}
+        </select>
+      </p>
+    
+      <p>
+        <label for='Instant'><h3>Moment de l'insertion</h3></label><input type="text" name = 'instant' >
+      </p>
+
+    <p><input class="btn btn-primary" type="Submit" value="Appliquer"></p>
+
+{% endblock %}
+
+<!--Code python à ajouter dans le lien qui donne mix pour avoir la base de donnée ouverte-->
+<!--cur = mysql.connection.cursor()
+
+    result=cur.execute("SELECT id, titre doc FROM sample ")
+    items=cur.fetchall()
+    
+     
+    cur.close()
+
+    if result > 0:
+        return render_template('',items=items)
+    else :
+        flash("La base de Donnée est vide")
+        return render_template('') -->

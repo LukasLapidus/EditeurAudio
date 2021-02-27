@@ -1,0 +1,51 @@
+
+
+{% extends 'layoutx.html' %}
+
+{% block body %}
+<section id="iq-home" class="bannerq-bg iq-bg-fixed iq-box-shadow iq-over-black-90" style=" background: url(images/banner/bg.jpg);">
+    <div id="particles-js"></div>
+    <div class="container">
+        <div class="row banner-text">
+           
+            <div class="col-md-12">
+                <h1>Liste de musique</h1>
+                <form action="/upload_music" method="post" enctype='multipart/form-data'>Choix d'une musique : </label>
+                <input type="file" id="file" name="file" accept=".wav">
+                <input type='submit' value='Envoyer' class="btn btn-primary">
+                </form>
+                <table class="table table-sm table-responsive-sm">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th>Titre</th>
+                        <th>Artiste</th>
+                        <th>Doc</th>
+                      </tr>
+                    </thead>
+
+                    {% for item in items %}
+                    <tr>
+                      <td>{{item.titre}}</td>
+                      <td>{{item.artiste}}</td>
+                      <td>{{item.doc}}</td>
+                      <td><form action="/mix/{{item.id}}" method="post">
+                              <input type="hidden" name="method" value="Mix">
+                              <input  type="submit" value="Mix" class="btn btn-success">
+                            </form></td>
+                      <td>
+                          <form action="{{url_for('delete_music', id=item.id)}}" method="post">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <input  type="submit" value="Supprimer" class="btn btn-danger">
+                          </form>
+                        </td>        
+                    </tr>
+                    {% endfor %}
+                    
+                  </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
