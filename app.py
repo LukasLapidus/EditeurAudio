@@ -20,10 +20,10 @@ app.config['SESSION_TYPE'] = 'filesystem'
 # Config MySQL
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'Lukas13986@&'   # Lié à la base de donnée sur l'ordinateur
-app.config['MYSQL_DB'] = 'editeur_audio'        # Nom de la base de données créée et activée
+app.config['MYSQL_PASSWORD'] = 'votre mot de passe'     # A MODIFIER !!
+app.config['MYSQL_DB'] = 'editeur_audio'                # Nom de la base de données créée
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
-app.config['UPLOAD_FOLDER'] = './uploads'       # Emplacement des fichiers upload sur le site
+app.config['UPLOAD_FOLDER'] = './uploads'               # Emplacement des fichiers upload sur le site
 
 
 # init MYSQL
