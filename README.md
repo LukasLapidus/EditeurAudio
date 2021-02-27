@@ -34,7 +34,7 @@ Afin de profiter pleinement de votre expérience au sein de ce site d'édition m
 * Flask
 * wtForm
 * Soundfile
-* Librosa (Update : risque que ca ne fonctionne pas)
+* Librosa (Update : Se télécharge correctement mais ne s'importe pas correctement lors de la compilation)
 * OS
 * Flask_mysqldb
 * numpy
