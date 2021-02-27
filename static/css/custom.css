@@ -1,0 +1,60 @@
+/*
+
+Template: Appino - Responsive App Landing Page
+Author: iqonicthemes.in
+Version: 1.0
+Design and Developed by: iqonicthemes.in
+
+NOTE: You can use your styling layout by this file to your website.
+
+*/
+
+
+#container_carac
+{
+    display:flex;
+    justify-content : space-around;
+    text-align:center;
+}
+
+.element_carac
+{
+    width : 20%;
+    margin:8px;
+}
+
+#btn_apply
+{
+    justify-content: center;
+}
+
+#container_mix
+{
+    display:flex;
+    justify-content : space-between;
+    text-align:center;
+    padding:8px;
+    
+}
+
+.element_mix
+{
+    width:25%;
+    background-color: lightblue;
+    border-radius: 5px;
+    box-shadow: 6px 6px 6px black;
+    margin:10px;
+}
+
+#container_sample
+{
+    background-color: lightblue;
+    border-radius: 5px;
+    box-shadow: 6px 6px 6px black;
+    margin:10px;
+}
+
+.noir
+{
+    color: black;
+}
