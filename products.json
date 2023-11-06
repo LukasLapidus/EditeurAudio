@@ -1,0 +1,31 @@
+{
+    "pagination": {
+        "limit": 25,
+        "total": 152,
+        "count": 25,
+        "offset": 25
+    },
+    "data": [
+        {
+            "id": 6657,
+            "type": "product",
+            "name": "lorem ipsum",
+            "reference": "ref0123",
+            "reference_price": "19.99",
+            "reference_price_taxes_exc": "19.99",
+            "purchase_amount": "8.25",
+            "reference_price_taxes_inc": "23.98",
+            "is_reference_price_taxes_free": true,
+            "tax_id": 354,
+            "unit_id": 952,
+            "price_excl_tax": "500.00",
+            "currency": "EUR",
+            "standard_quantity": "3",
+            "description": "T-shirt 90% coton",
+            "is_name_included_in_description": true,
+            "accounting_code_id": 321,
+            "accounting_purchase_code_id": 123,
+            "is_archived": false
+        }
+    ]
+}

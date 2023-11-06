@@ -1,0 +1,510 @@
+{
+    "pagination": {
+        "limit": 25,
+        "total": 152,
+        "count": 25,
+        "offset": 25
+    },
+    "data": [
+        {
+            "id": 6657,
+            "type": "prospect",
+            "name": "Example company",
+            "email": "contact@example-company.com",
+            "website": "http://example-company.com",
+            "phone_number": "+33100000000",
+            "mobile_number": "+33600000000",
+            "fax_number": "+33100000000",
+            "legal_france": {
+                "siret": "73282932000074",
+                "siren": "732829320",
+                "vat": "FR99999999999",
+                "ape_naf_code": "4711C",
+                "company_type": "SAS",
+                "rcs_immatriculation": "RCS xxxxx"
+            },
+            "capital": "4000",
+            "reference": "CLI-1654",
+            "note": "An handed-written note describing this company",
+            "auxiliary_code": "0EX11C",
+            "social": {
+                "twitter": "https://twitter.com/example",
+                "facebook": "https://facebook.com/example",
+                "linkedin": "https://linkedin.com/example",
+                "viadeo": "https://viadeo.com/example"
+            },
+            "rate_category_id": 9956,
+            "main_contact_id": 6654,
+            "dunning_contact_id": 6654,
+            "invoicing_contact_id": 6654,
+            "invoicing_address_id": 9987,
+            "delivery_address_id": 6547,
+            "accounting_code_id": 12345,
+            "accounting_purchase_code_id": 98556,
+            "owner": {
+                "id": 6657,
+                "type": "staff"
+            },
+            "created": "2020-05-29T11:22:03+02:00",
+            "updated_at": "2020-05-29T11:22:03+02:00",
+            "is_archived": false,
+            "business_segment": {
+                "id": 3,
+                "label": "Software publisher / Digital services company"
+            },
+            "number_of_employees": {
+                "id": 1,
+                "label": "From 1 to 5"
+            },
+            "marketing_campaigns_subscriptions": [
+                "sms"
+            ],
+            "_embed": {
+                "invoicing_address": {
+                    "id": 6657,
+                    "name": "Main office",
+                    "address_line_1": "30 Commercial Road",
+                    "address_line_2": "Finance and Accounting",
+                    "address_line_3": "Lighthouse Promotions",
+                    "address_line_4": "PO Box 215",
+                    "postal_code": "75012",
+                    "city": "Paris",
+                    "country": "France",
+                    "country_code": "FR",
+                    "is_invoicing_address": true,
+                    "is_delivery_address": true,
+                    "geocode": {
+                        "lat": 46.140862,
+                        "lng": -1.168249
+                    }
+                },
+                "delivery_address": {
+                    "id": 6657,
+                    "name": "Main office",
+                    "address_line_1": "30 Commercial Road",
+                    "address_line_2": "Finance and Accounting",
+                    "address_line_3": "Lighthouse Promotions",
+                    "address_line_4": "PO Box 215",
+                    "postal_code": "75012",
+                    "city": "Paris",
+                    "country": "France",
+                    "country_code": "FR",
+                    "is_invoicing_address": true,
+                    "is_delivery_address": true,
+                    "geocode": {
+                        "lat": 46.140862,
+                        "lng": -1.168249
+                    }
+                },
+                "main_contact": {
+                    "id": 6657,
+                    "civility": "mrs",
+                    "first_name": "John",
+                    "last_name": "Doe",
+                    "email": "john.doe@example-company.com",
+                    "website": "http://example-john-doe.com",
+                    "phone_number": "+33100000000",
+                    "mobile_number": "+33600000000",
+                    "fax_number": "+33100000000",
+                    "position": "Financial",
+                    "birth_date": "2000-05-29",
+                    "avatar": "http://example-john-doe.com/avatar",
+                    "note": "An handed-written note describing this contact",
+                    "invoicing_address_id": 9987,
+                    "delivery_address_id": 6547,
+                    "social": {
+                        "twitter": "https://twitter.com/example",
+                        "facebook": "https://facebook.com/example",
+                        "linkedin": "https://linkedin.com/example",
+                        "viadeo": "https://viadeo.com/example"
+                    },
+                    "sync": {
+                        "mailchimp": true,
+                        "mailjet": true,
+                        "simplemail": true
+                    },
+                    "owner": {
+                        "id": 6657,
+                        "type": "staff"
+                    },
+                    "created": "2020-05-29T11:22:03+02:00",
+                    "updated": "2020-05-29T11:22:03+02:00",
+                    "is_archived": false,
+                    "marketing_campaigns_subscriptions": [
+                        "sms"
+                    ],
+                    "_embed": {
+                        "invoicing_address": {
+                            "id": 6657,
+                            "name": "Main office",
+                            "address_line_1": "30 Commercial Road",
+                            "address_line_2": "Finance and Accounting",
+                            "address_line_3": "Lighthouse Promotions",
+                            "address_line_4": "PO Box 215",
+                            "postal_code": "75012",
+                            "city": "Paris",
+                            "country": "France",
+                            "country_code": "FR",
+                            "is_invoicing_address": true,
+                            "is_delivery_address": true,
+                            "geocode": {
+                                "lat": 46.140862,
+                                "lng": -1.168249
+                            }
+                        },
+                        "delivery_address": {
+                            "id": 6657,
+                            "name": "Main office",
+                            "address_line_1": "30 Commercial Road",
+                            "address_line_2": "Finance and Accounting",
+                            "address_line_3": "Lighthouse Promotions",
+                            "address_line_4": "PO Box 215",
+                            "postal_code": "75012",
+                            "city": "Paris",
+                            "country": "France",
+                            "country_code": "FR",
+                            "is_invoicing_address": true,
+                            "is_delivery_address": true,
+                            "geocode": {
+                                "lat": 46.140862,
+                                "lng": -1.168249
+                            }
+                        },
+                        "opportunities": 2,
+                        "estimates": 2,
+                        "invoices": 2,
+                        "orders": 2,
+                        "deliveries": 2,
+                        "smart_tags": [
+                            {
+                                "value": "smart tag",
+                                "id": 55
+                            }
+                        ],
+                        "custom_fields": [
+                            {
+                                "id": 6657,
+                                "name": "Business sector",
+                                "code": "business-sector",
+                                "description": "A text describing this custom field.",
+                                "mandatory": false,
+                                "rank": 1,
+                                "related_object": [
+                                    "document"
+                                ],
+                                "customfield_group": {
+                                    "id": 123,
+                                    "name": "intervention",
+                                    "code": "groupintervention",
+                                    "open_by_default": false
+                                },
+                                "type": "simple-text",
+                                "parameters": {
+                                    "default_value": "Simple text",
+                                    "char_min": 0,
+                                    "char_max": 250
+                                },
+                                "value": "Lorem"
+                            }
+                        ],
+                        "acl": {
+                            "can_be_updated": true,
+                            "can_be_deleted": true,
+                            "view_contacts_addresses": true,
+                            "create_contacts_addresses": true,
+                            "update_contacts_addresses": true,
+                            "delete_contacts_addresses": true
+                        }
+                    }
+                },
+                "dunning_contact": {
+                    "id": 6657,
+                    "civility": "mrs",
+                    "first_name": "John",
+                    "last_name": "Doe",
+                    "email": "john.doe@example-company.com",
+                    "website": "http://example-john-doe.com",
+                    "phone_number": "+33100000000",
+                    "mobile_number": "+33600000000",
+                    "fax_number": "+33100000000",
+                    "position": "Financial",
+                    "birth_date": "2000-05-29",
+                    "avatar": "http://example-john-doe.com/avatar",
+                    "note": "An handed-written note describing this contact",
+                    "invoicing_address_id": 9987,
+                    "delivery_address_id": 6547,
+                    "social": {
+                        "twitter": "https://twitter.com/example",
+                        "facebook": "https://facebook.com/example",
+                        "linkedin": "https://linkedin.com/example",
+                        "viadeo": "https://viadeo.com/example"
+                    },
+                    "sync": {
+                        "mailchimp": true,
+                        "mailjet": true,
+                        "simplemail": true
+                    },
+                    "owner": {
+                        "id": 6657,
+                        "type": "staff"
+                    },
+                    "created": "2020-05-29T11:22:03+02:00",
+                    "updated": "2020-05-29T11:22:03+02:00",
+                    "is_archived": false,
+                    "marketing_campaigns_subscriptions": [
+                        "sms"
+                    ],
+                    "_embed": {
+                        "invoicing_address": {
+                            "id": 6657,
+                            "name": "Main office",
+                            "address_line_1": "30 Commercial Road",
+                            "address_line_2": "Finance and Accounting",
+                            "address_line_3": "Lighthouse Promotions",
+                            "address_line_4": "PO Box 215",
+                            "postal_code": "75012",
+                            "city": "Paris",
+                            "country": "France",
+                            "country_code": "FR",
+                            "is_invoicing_address": true,
+                            "is_delivery_address": true,
+                            "geocode": {
+                                "lat": 46.140862,
+                                "lng": -1.168249
+                            }
+                        },
+                        "delivery_address": {
+                            "id": 6657,
+                            "name": "Main office",
+                            "address_line_1": "30 Commercial Road",
+                            "address_line_2": "Finance and Accounting",
+                            "address_line_3": "Lighthouse Promotions",
+                            "address_line_4": "PO Box 215",
+                            "postal_code": "75012",
+                            "city": "Paris",
+                            "country": "France",
+                            "country_code": "FR",
+                            "is_invoicing_address": true,
+                            "is_delivery_address": true,
+                            "geocode": {
+                                "lat": 46.140862,
+                                "lng": -1.168249
+                            }
+                        },
+                        "opportunities": 2,
+                        "estimates": 2,
+                        "invoices": 2,
+                        "orders": 2,
+                        "deliveries": 2,
+                        "smart_tags": [
+                            {
+                                "value": "smart tag",
+                                "id": 55
+                            }
+                        ],
+                        "custom_fields": [
+                            {
+                                "id": 6657,
+                                "name": "Business sector",
+                                "code": "business-sector",
+                                "description": "A text describing this custom field.",
+                                "mandatory": false,
+                                "rank": 1,
+                                "related_object": [
+                                    "document"
+                                ],
+                                "customfield_group": {
+                                    "id": 123,
+                                    "name": "intervention",
+                                    "code": "groupintervention",
+                                    "open_by_default": false
+                                },
+                                "type": "simple-text",
+                                "parameters": {
+                                    "default_value": "Simple text",
+                                    "char_min": 0,
+                                    "char_max": 250
+                                },
+                                "value": "Lorem"
+                            }
+                        ],
+                        "acl": {
+                            "can_be_updated": true,
+                            "can_be_deleted": true,
+                            "view_contacts_addresses": true,
+                            "create_contacts_addresses": true,
+                            "update_contacts_addresses": true,
+                            "delete_contacts_addresses": true
+                        }
+                    }
+                },
+                "invoicing_contact": {
+                    "id": 6657,
+                    "civility": "mrs",
+                    "first_name": "John",
+                    "last_name": "Doe",
+                    "email": "john.doe@example-company.com",
+                    "website": "http://example-john-doe.com",
+                    "phone_number": "+33100000000",
+                    "mobile_number": "+33600000000",
+                    "fax_number": "+33100000000",
+                    "position": "Financial",
+                    "birth_date": "2000-05-29",
+                    "avatar": "http://example-john-doe.com/avatar",
+                    "note": "An handed-written note describing this contact",
+                    "invoicing_address_id": 9987,
+                    "delivery_address_id": 6547,
+                    "social": {
+                        "twitter": "https://twitter.com/example",
+                        "facebook": "https://facebook.com/example",
+                        "linkedin": "https://linkedin.com/example",
+                        "viadeo": "https://viadeo.com/example"
+                    },
+                    "sync": {
+                        "mailchimp": true,
+                        "mailjet": true,
+                        "simplemail": true
+                    },
+                    "owner": {
+                        "id": 6657,
+                        "type": "staff"
+                    },
+                    "created": "2020-05-29T11:22:03+02:00",
+                    "updated": "2020-05-29T11:22:03+02:00",
+                    "is_archived": false,
+                    "marketing_campaigns_subscriptions": [
+                        "sms"
+                    ],
+                    "_embed": {
+                        "invoicing_address": {
+                            "id": 6657,
+                            "name": "Main office",
+                            "address_line_1": "30 Commercial Road",
+                            "address_line_2": "Finance and Accounting",
+                            "address_line_3": "Lighthouse Promotions",
+                            "address_line_4": "PO Box 215",
+                            "postal_code": "75012",
+                            "city": "Paris",
+                            "country": "France",
+                            "country_code": "FR",
+                            "is_invoicing_address": true,
+                            "is_delivery_address": true,
+                            "geocode": {
+                                "lat": 46.140862,
+                                "lng": -1.168249
+                            }
+                        },
+                        "delivery_address": {
+                            "id": 6657,
+                            "name": "Main office",
+                            "address_line_1": "30 Commercial Road",
+                            "address_line_2": "Finance and Accounting",
+                            "address_line_3": "Lighthouse Promotions",
+                            "address_line_4": "PO Box 215",
+                            "postal_code": "75012",
+                            "city": "Paris",
+                            "country": "France",
+                            "country_code": "FR",
+                            "is_invoicing_address": true,
+                            "is_delivery_address": true,
+                            "geocode": {
+                                "lat": 46.140862,
+                                "lng": -1.168249
+                            }
+                        },
+                        "opportunities": 2,
+                        "estimates": 2,
+                        "invoices": 2,
+                        "orders": 2,
+                        "deliveries": 2,
+                        "smart_tags": [
+                            {
+                                "value": "smart tag",
+                                "id": 55
+                            }
+                        ],
+                        "custom_fields": [
+                            {
+                                "id": 6657,
+                                "name": "Business sector",
+                                "code": "business-sector",
+                                "description": "A text describing this custom field.",
+                                "mandatory": false,
+                                "rank": 1,
+                                "related_object": [
+                                    "document"
+                                ],
+                                "customfield_group": {
+                                    "id": 123,
+                                    "name": "intervention",
+                                    "code": "groupintervention",
+                                    "open_by_default": false
+                                },
+                                "type": "simple-text",
+                                "parameters": {
+                                    "default_value": "Simple text",
+                                    "char_min": 0,
+                                    "char_max": 250
+                                },
+                                "value": "Lorem"
+                            }
+                        ],
+                        "acl": {
+                            "can_be_updated": true,
+                            "can_be_deleted": true,
+                            "view_contacts_addresses": true,
+                            "create_contacts_addresses": true,
+                            "update_contacts_addresses": true,
+                            "delete_contacts_addresses": true
+                        }
+                    }
+                },
+                "opportunities": 2,
+                "estimates": 2,
+                "invoices": 2,
+                "orders": 2,
+                "deliveries": 2,
+                "acl": {
+                    "can_be_updated": true,
+                    "can_be_deleted": true,
+                    "view_companies_addresses": true,
+                    "create_companies_addresses": true,
+                    "update_companies_addresses": true,
+                    "delete_companies_addresses": true
+                },
+                "smart_tags": [
+                    {
+                        "value": "smart tag",
+                        "id": 55
+                    }
+                ],
+                "custom_fields": [
+                    {
+                        "id": 6657,
+                        "name": "Business sector",
+                        "code": "business-sector",
+                        "description": "A text describing this custom field.",
+                        "mandatory": false,
+                        "rank": 1,
+                        "related_object": [
+                            "document"
+                        ],
+                        "customfield_group": {
+                            "id": 123,
+                            "name": "intervention",
+                            "code": "groupintervention",
+                            "open_by_default": false
+                        },
+                        "type": "simple-text",
+                        "parameters": {
+                            "default_value": "Simple text",
+                            "char_min": 0,
+                            "char_max": 250
+                        },
+                        "value": "Lorem"
+                    }
+                ]
+            }
+        }
+    ]
+}
